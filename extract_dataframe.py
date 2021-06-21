@@ -35,7 +35,7 @@ class TweetDfExtractor:
 
     # an example function
     def find_statuses_count(self)->list:
-        statuses_count 
+        statuses_count = len(self.tweets_list['status'])
         
     def find_full_text(self)->list:
         text = 
@@ -75,13 +75,13 @@ class TweetDfExtractor:
         
     
     def find_retweet_count(self)->list:
-        retweet_count = 
+        retweet_count = len(self.tweets_list)
 
     def find_hashtags(self)->list:
-        hashtags =
+        hashtags = self.tweets_list['hashtags']
 
     def find_mentions(self)->list:
-        mentions = 
+        mentions = self.tweets_list['mentions']
 
 
     def find_location(self)->list:
