@@ -74,9 +74,11 @@ class TestTweetDfExtractor(unittest.TestCase):
         self.assertEqual(self.df.find_retweet_count(), [612, 92, 1, 899, 20])
 
     def test_find_hashtags(self):
-        self.assertEqual(self.df.find_hashtags(), ["#", "#", "#", "#", "#"])
+        hashtags = ["COVID19","WeCanDoThis"]
+        self.assertEqual(self.df.find_hashtags(), hashtags)
 
     def test_find_mentions(self):
+        mentions = ["GailReedMEDICC", "LongCovidNYC", "Daily Monitor", "BioCubaFarma", "Dr Matshidiso Moeti"]
         self.assertEqual(self.df.find_mentions(), "metion")
 
     def test_find_location(self):
